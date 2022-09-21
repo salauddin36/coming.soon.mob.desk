@@ -9,8 +9,8 @@ body{margin: 0px;
 }
 .outer{box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     background-color: white;
-    width: 304px;
-    height: 637px;
+    width: 100%;
+    height: 100%;
 }
 .in1 p{margin: 0;
     font-family: 'Josefin Sans', sans-serif;
@@ -35,17 +35,19 @@ body{margin: 0px;
     font-size: 11px;
     text-align: center;
     letter-spacing: 1px;
+    line-height:250%;
 }
 .search{
     margin: 40px 20px 20px 20px;
     background-color: rgb(248, 101, 126);
     width: 270px;
     height: 30px;
-    border-radius: 30px;border: none;
+    border-radius: 30px;
+    border: none;
     position: relative;
     display: flex;
 }
-.input{ margin: 1.5px;font-family: 'Josefin Sans', sans-serif;
+input{ margin: 1.5px;font-family: 'Josefin Sans', sans-serif;
     border-radius:30px; width: 250px;
             border:none; padding-left: 30px;
             outline: none;
@@ -58,27 +60,36 @@ body{margin: 0px;
     border: none;
     border-radius: 50px;
     font-size: 20px;color: white;
+    cursor: pointer;
 }
 @media screen and (min-width: 768px) 
 {
     .outer{box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
         background-color: white;
-        width: 1000px;
-        height: 600px;
+        width: 100%;
+        height: 100%;
         position: relative;
     }
-    .in1{margin: 40px 0 0 100px;
-        font-size: 11px;
+    .in1{margin: 100px 0 0 250px;
         letter-spacing: 3px;
         font-family: 'Josefin Sans', sans-serif;
     }
-    .img1{width: 450px;height: 600px;
-        position: absolute;
-        left: 550px;top: 0;
+    .in1 img{
+        width: 28px;
     }
-    .in2 p{margin: 0px;}
+    .in1 p{margin: 0;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+    .img1{width: 40%;height: 100%;
+        position: absolute;
+        left: 60%;top: 0;
+    }
+    .in2 p{margin: 0px;padding: 5px;}
     .in2{letter-spacing: 10px;
-        position: absolute;top: 90px;left: 50px;
+        position: absolute;top: 130px;left: 200px;
         margin: 45px;text-align: start;
         padding: 0px;
         font-size: 35px;
@@ -87,22 +98,23 @@ body{margin: 0px;
     .in3{margin: 15px;
         color: rgb(170, 66, 66);
         font-family: 'Josefin Sans', sans-serif;
-        font-weight: 800;
-        font-size: 15px;text-align: start;
+        font-weight: 500;
+        font-size: 20px;text-align: start;
         letter-spacing: 1px;width: 500px;
-        position: absolute;top: 250px;left: 80px;
+        position: absolute;top: 300px;left: 230px;
+        line-height: 200%;
     }
-    .search{top: 320px;left: 70px;
+    .search{top: 370px;left: 225px;
         margin: 40px 20px 20px 20px;
         background-color: rgb(248, 101, 126);
-        width: 300px;
+        width: 350px;
         height: 30px;
         border-radius: 30px;border: none;
         position: relative;
         display: flex;
     }
     .input{ margin: 1.5px;font-family: 'Josefin Sans', sans-serif;font-weight: 600;
-        border-radius:30px;
+        border-radius:30px;width: 100%;
         border:none; padding-left: 30px; outline: none;
         color:rgb(248, 101, 126) ;
     }
@@ -113,5 +125,6 @@ body{margin: 0px;
         border: none;
         border-radius: 50px;
         font-size: 20px;color: white;
+        cursor: pointer;
     }
 }
