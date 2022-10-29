@@ -20,6 +20,9 @@ body{margin: 0px;
 }
 .in1{margin: 30px;
 }
+.img1{
+    object-fit: contain;
+}
 .in2 p{margin: 10px;}
 .in2{margin: 25px;
     letter-spacing: 10px;
